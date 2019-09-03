@@ -14,9 +14,15 @@ public class SquareTest {
         assertEquals(0.0f,squareWithSideZero.area());
     }
     @Test
-    void givenOneSide_WhenCalculteArea_ThenShouldReturnOne(){
+    void givenOneSide_WhenCalculateArea_ThenShouldReturnOne(){
 
         Square squareWithSideOne = new Square(1.0f);
         assertEquals(1.0f, squareWithSideOne.area());
+    }
+
+    @Test
+    void givenNonZeroSide_WhenCalculateArea_ThenShouldReturnNonZero(){
+        Square squareWithNonZeroSide=new Square(2.0f);
+        assertEquals(4.0f,squareWithNonZeroSide.area());
     }
 }
