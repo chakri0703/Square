@@ -31,5 +31,11 @@ public class SquareTest {
         Square squareWithSideZero=new Square(0.0f);
         assertEquals(0.0f,squareWithSideZero.perimeter());
     }
+    @Test
+    void givenOneSide_WhenCalculatePerimeter_ThenShouldReturnFour(){
+
+        Square squareWithSideOne = new Square(1.0f);
+        assertEquals(4.0f, squareWithSideOne.perimeter());
+    }
 
 }
