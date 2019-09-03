@@ -9,4 +9,8 @@ public class Square {
     public float area() {
         return this.side*this.side;
     }
+
+    public float perimeter() {
+        return 0.0f;
+    }
 }
