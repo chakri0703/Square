@@ -7,6 +7,6 @@ public class Square {
         this.side = side;
     }
     public float area() {
-        return 0.0f;
+        return this.side;
     }
 }
